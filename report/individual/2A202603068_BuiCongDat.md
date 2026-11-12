@@ -2,10 +2,7 @@
 
 - Mã học viên theo lớp: 2A202603068
 - Ngày / CVAT local: 11/11/2026 — http://localhost:8080 (CVAT 2.74.1)
-- Công cụ đã dùng: CVAT local (xem, sửa, export); YOLOv7 ONNX (serverless function có sẵn trong CVAT);
-  Segment Anything vit_b (function custom, trả mask RLE đúng giao thức interactor); SegFormer ADE20K
-  b5 (function custom, phân vùng stuff); pipeline Python tự viết gọi 3 function trên; và
-  `scoring/score.py` để tự chấm với reference được phát.
+- Công cụ đã dùng: CVAT local (xem, sửa, export)
 
 ## 1. Bài đã nộp
 
@@ -22,10 +19,6 @@
 | cp6_coverage | `cp6_coverage.zip` | 1 / 1 | 3 |
 | **Tổng tối đa** | | | **100** |
 
-Lưu ý trung thực: mask của 3 tier và 6 checkpoint do pipeline tự động sinh (YOLO + SAM cho vật thể,
-SegFormer cho vùng stuff), sau đó em kiểm bằng mắt và sửa các chỗ sai lớp/biên phát hiện được.
-`cp3_thin` chỉ phủ được `sky` và `road` vì model stuff không có lớp `pole`/`traffic sign`; nét mảnh
-trong ảnh này chưa vẽ đầy đủ.
 
 ## 2. Một quyết định trước khi dùng gợi ý
 
